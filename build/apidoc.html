@@ -1,0 +1,315 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >homebridge (v0.4.19)</a>
+</h1>
+<h4>HomeKit support for the impatient</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge">module homebridge</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge.</span>logger</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge.</span>mac</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge.</span>plugin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge.</span>user</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge.logger">module homebridge.logger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge.logger.Logger">
+            function <span class="apidocSignatureSpan">homebridge.logger.</span>Logger
+            <span class="apidocSignatureSpan">(prefix)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge.logger.setDebugEnabled">
+            function <span class="apidocSignatureSpan">homebridge.logger.</span>setDebugEnabled
+            <span class="apidocSignatureSpan">(enabled)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge.logger.</span>_system</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge.mac">module homebridge.mac</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge.mac.generate">
+            function <span class="apidocSignatureSpan">homebridge.mac.</span>generate
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge.plugin">module homebridge.plugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge.plugin.Plugin">
+            function <span class="apidocSignatureSpan">homebridge.plugin.</span>Plugin
+            <span class="apidocSignatureSpan">(pluginPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge.user">module homebridge.user</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.homebridge.user.User">
+            function <span class="apidocSignatureSpan">homebridge.user.</span>User
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge" id="apidoc.module.homebridge">module homebridge</a></h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge.logger" id="apidoc.module.homebridge.logger">module homebridge.logger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge.logger.Logger" id="apidoc.element.homebridge.logger.Logger">
+        function <span class="apidocSignatureSpan">homebridge.logger.</span>Logger
+        <span class="apidocSignatureSpan">(prefix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Logger(prefix) {
+  this.prefix = prefix;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge.logger.setDebugEnabled" id="apidoc.element.homebridge.logger.setDebugEnabled">
+        function <span class="apidocSignatureSpan">homebridge.logger.</span>setDebugEnabled
+        <span class="apidocSignatureSpan">(enabled)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setDebugEnabled(enabled) {
+  DEBUG_ENABLED = enabled;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var insecureAccess = false;
+
+program
+  .version(version)
+  .option(&#x27;-P, --plugin-path [path]&#x27;, &#x27;look for plugins installed at [path] as well as the default locations ([path
+] can also point to a single plugin)&#x27;, function(p) { Plugin.addPluginPath(p); })
+  .option(&#x27;-U, --user-storage-path [path]&#x27;, &#x27;look for homebridge user files at [path] instead of the default location
+ (~/.homebridge)&#x27;, function(p) { User.setStoragePath(p); })
+  .option(&#x27;-D, --debug&#x27;, &#x27;turn on debug level logging&#x27;, function() { require(&#x27;./logger&#x27;).<span class
+="apidocCodeKeywordSpan">setDebugEnabled</span>(true) })
+  .option(&#x27;-I, --insecure&#x27;, &#x27;allow unauthenticated requests (for easier hacking)&#x27;, function() { insecureAccess
+ = true })
+  .parse(process.argv);
+
+// Initialize HAP-NodeJS with a custom persist directory
+hap.init(User.persistPath());
+
+var server = new Server(insecureAccess);
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge.mac" id="apidoc.module.homebridge.mac">module homebridge.mac</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge.mac.generate" id="apidoc.element.homebridge.mac.generate">
+        function <span class="apidocSignatureSpan">homebridge.mac.</span>generate
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generate(data) {
+  var sha1sum = crypto.createHash(&#x27;sha1&#x27;);
+  sha1sum.update(data);
+  var s = sha1sum.digest(&#x27;hex&#x27;);
+  var i = -1;
+  return &#x27;xx:xx:xx:xx:xx:xx&#x27;.replace(/[x]/g, function(c) {
+    i += 1;
+    return s[i];
+  }).toUpperCase();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = {
+SetupSession: BridgeSetupSession
+}
+
+function BridgeSetupSession(stateChar, controlChar) {
+this.validSession = false
+this.sessionUUID = uuid.<span class="apidocCodeKeywordSpan">generate</span>(crypto.randomBytes(32));
+this.stateChar = stateChar;
+this.controlChar = controlChar;
+
+this.transactionID = 0;
+this.preferedLanguage = &#x22;en-US&#x22;;
+
+this.lastResponse = null;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge.plugin" id="apidoc.module.homebridge.plugin">module homebridge.plugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge.plugin.Plugin" id="apidoc.element.homebridge.plugin.Plugin">
+        function <span class="apidocSignatureSpan">homebridge.plugin.</span>Plugin
+        <span class="apidocSignatureSpan">(pluginPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Plugin(pluginPath) {
+  this.pluginPath = pluginPath; // like &#x22;/usr/local/lib/node_modules/homebridge-lockitron&#x22;
+  this.initializer; // exported function from the plugin that initializes it
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.homebridge.user" id="apidoc.module.homebridge.user">module homebridge.user</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.homebridge.user.User" id="apidoc.element.homebridge.user.User">
+        function <span class="apidocSignatureSpan">homebridge.user.</span>User
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function User() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
